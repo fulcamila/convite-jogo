@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://s2-ge.glbimg.com/4u8TrSb5IODk3y6msWoIV-1sGPQ=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/a/P/Fva7BZSsikEAPTJPR3zw/foto-rafael-bandeira-scr.jpeg'); /* URL da bandeira do Sport */
+    background-size: cover; /* A imagem ocupa toda a tela */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px; /* Limita a largura máxima */
+}
+
+.logo {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px; /* Espaçamento abaixo da logo */
+}
+
+h1 {
+    color: #c72c41; /* Cor do texto do título */
+    margin: 10px 0;
+}
+
+p {
+    color: #555; /* Cor do texto da pergunta */
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn.yes {
+    background-color: #28a745; /* Verde para "Sim" */
+    color: white;
+}
+
+.btn.no {
+    background-color: #dc3545; /* Vermelho para "Não" */
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Efeito de "elevação" ao passar o mouse */
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.justification, .location {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+input:focus {
+    border-color: #007BFF; /* Muda a borda ao focar */
+}

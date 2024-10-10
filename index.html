@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para o Jogo</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.worldvectorlogo.com/logos/sport-club-recife-pe.svg" alt="Escudo do Sport" class="logo">
+        <h1>ATENÇÃO!</h1>
+        <p>Você gostaria ver o jogo do Sport comigo na sexta-feira?</p>
+        <div class="buttons">
+            <button id="yesButton" class="btn yes">Sim</button>
+            <button id="noButton" class="btn no">Não</button>
+        </div>
+        
+        <div id="responseMessage" class="response"></div>
+        
+        <!-- Campo para justificar se a resposta for "Não" -->
+        <div id="justificationSection" class="justification" style="display: none;">
+            <label for="justificationInput">Por que não?</label>
+            <input type="text" id="justificationInput" placeholder="Digite sua justificativa...">
+            <button id="submitJustification" class="btn">Enviar Justificativa</button>
+        </div>
+
+        <!-- Campo para local se a resposta for "Sim" -->
+        <div id="locationSection" class="location" style="display: none;">
+            <label for="locationInput"> Qual local?</label>
+            <input type="text" id="locationInput" placeholder="Digite o local do jogo...">
+            <button id="submitLocation" class="btn">Enviar Local</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
